@@ -16,7 +16,7 @@ var dir string
 var outputLayout string
 
 func init() {
-	flag.StringVar(&dir, "p", "", "Directory with files to rename (required)")
+	flag.StringVar(&dir, "dir", "", "Directory with files to rename (required)")
 	flag.StringVar(&outputLayout, "o", DEFAULT_OUTPUT_LAYOUT, "Output layout (default to 02-01-2006)")
 	flag.Parse()
 }
